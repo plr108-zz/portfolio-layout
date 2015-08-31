@@ -1,0 +1,16 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    color: #676;
+}
+
+.col-md-12, .col-md-6, .col-md-4 {
+    border: 1px solid black;
+}
+
+.hi-my-name-is {
+    text-align: right;
+}
+
+.featured {
+    color: #BCB;
+}
