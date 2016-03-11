@@ -1,72 +1,67 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
-    <!--Udacity Front End Developer Nanodegree Project 1 Take 1-->
+    <!--Udacity Front End Developer Nanodegree Project 1 - Portfolio Site-->
     <!--By: Patrick Roche patrick.l.roche@gmail.com-->
-    <meta name="description" content="Udacity Front End Developer Nanodegree Project 1">
+    <meta name="description" content="Patrick Roche -- Online Portfolio">
     <meta name="author" content="Patrick Roche">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Patrick Roche: My Portfolio </title>
+    <title>Patrick Roche - Portfolio</title>
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-
-    <!--Open Sans Font from Google Fonts-->
-    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Oswald|Lato'>
-
-    <!--I got this script from sample code on http://getbootstrap.com/getting-started/#template -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald|Lato">
+    <script src="js/jquery-2.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </head>
 
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
-                <img class="img-responsive" src="http://placehold.it/100x100" alt="Logo Image">
+            <div class="col-md-6" id="biopic-name-role">
+                <div id="biopic-container">
+                    <img class="img-responsive" id="biopic" src="images/me.jpg" alt="Logo Image">
+                </div>
+                <div id="name-role-container">
+                    <h1 class="text-uppercase" id="name">Patrick Roche</h1>
+                    <h4 class="text-uppercase" id="role">Web Developer</h4>
+                </div>
             </div>
-            <div class="col-md-6 hi-my-name-is">
-                <h1 class="text-uppercase">Patrick Roche</h1>
-                <h4 class="text-uppercase">Front-End Web Developer</h4>
+            <div class="col-md-6" id="contact-info">
                 <h3><a target="_blank" href="https://github.com/plr108">github.com/plr108</a></h3>
                 <h3><a target="_blank" href= "https://www.linkedin.com/in/patrickroche1">linkedin.com/in/patrickroche1</a></h3>
                 <h3><a href="mailto:patrick.l.roche@gmail.com">patrick.l.roche@gmail.com</a></h3>
             </div>
         </div>
-
         <div class="row">
             <div class="col-md-12">
                 <img class="img-responsive" src="http://placehold.it/1100x300" alt="Featured Work Placeholder Image">
             </div>
         </div>
-
         <div class="row">
             <div class="col-md-12">
                 <h2 class="featured">Featured Work</h2>
             </div>
         </div>
-
         <div class="row">
             <div class="col-md-4">
                 <img class="img-responsive" src="http://placehold.it/200x100" alt="Other Work 1 Placeholder Image">
-                <h3 class ="text-uppercase">Other Work 1</h3>
+                <h3 class="text-uppercase">Other Work 1</h3>
                 <p>Link 1</p>
             </div>
-
             <div class="col-md-4">
                 <img class="img-responsive" src="http://placehold.it/200x100" alt="Other Work 2 Placeholder Image">
                 <h3 class="text-uppercase">Other Work 2</h3>
                 <p>Link 2</p>
             </div>
-
             <div class="col-md-4">
                 <img class="img-responsive" src="http://placehold.it/200x100" alt="Other Work 3 Placeholder Image">
                 <h3 class="text-uppercase">Other Work 3</h3>
                 <p>Link 3</p>
             </div>
         </div>
-
     </div>
 </body>
+
 </html>
