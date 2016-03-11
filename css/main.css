@@ -7,3 +7,32 @@
     border: 1px solid black;
 }
 
+.featured {
+    color: #BCB;
+}
+
+.title-font {
+	font-family: 'Oswald', sans-serif;
+}
+
+#biopic {
+	padding: 10px;
+	width: 80px;
+	height: 80px;
+	float: left;
+}
+
+#name {
+	font-size: 20px;
+}
+
+#name-role {
+    text-align: right;
+    max-width: 2000px;
+    overflow: hidden;
+}
+
+#role {
+	font-size: 16px;
+}
+
