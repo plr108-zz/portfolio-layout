@@ -7,17 +7,18 @@
     border: 1px solid black;
 }
 
-.featured {
-    color: #BCB;
+.contact-type {
+	padding: 5px 10px 0px 0px;
 }
 
-.title-font {
+.contact-type,
+#name-role-container {
 	font-family: 'Oswald', sans-serif;
 }
 
 #biopic {
-	padding: 10px;
-	width: 80px;
+	padding: 10px 10px 10px 5px;
+	width: 75px;
 	height: 80px;
 	float: left;
 }
@@ -36,3 +37,7 @@
 	font-size: 16px;
 }
 
+#top-contacts{
+	list-style-type: none;
+	padding: 0px 0px 0px 5px;
+}
