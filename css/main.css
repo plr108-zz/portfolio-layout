@@ -16,6 +16,10 @@
 	font-family: 'Oswald', sans-serif;
 }
 
+.contact-type:hover {
+	color: #0c0;
+}
+
 #biopic {
 	padding: 10px 10px 10px 5px;
 	width: 75px;
