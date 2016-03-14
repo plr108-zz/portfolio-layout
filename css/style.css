@@ -1,17 +1,18 @@
 * {
-    font-family: 'Lato', sans-serif;
-    color: #676;
+    font-family: 'Doppio One', sans-serif;
+    color: #000;
 }
 
 #body {
-    background-color: #1a1a1a;
+    background-color: #FFF;
 }
 
 .col-lg-4,
 .col-md-4,
-.col-md-6,
 .col-md-12,
-.col-sm-6 {
+.col-sm-6,
+#biopic-name-role,
+#contact-info {
     border: 1px solid black;
 }
 
@@ -19,13 +20,12 @@
     padding: 5px 10px 0px 0px;
 }
 
-.contact-type,
-.project-repo,
-.project-title,
-#name-role-container,
-#project-header {
-    font-family: 'Jockey One', sans-serif;
-    text-transform: uppercase;
+.contact-value a {
+    text-decoration: none;
+}
+.contact-value a,
+.project-description {
+    font-family: 'Roboto';
 }
 
 .contact-type:hover {
@@ -36,15 +36,50 @@
     color: red;
 }
 
+.wrapper {
+    position: relative;
+    width: 100%;
+    background-color: skyblue;
+}
+
+.aspect-ratio {
+    padding-bottom: 28.125%;
+
+}
+
+.content {
+    position: absolute;
+    top: 0;  bottom: 0;  left: 0;  right: 0;
+    padding: 2%; /* Optional padding for content area */
+    background-color: #ff6698;
+}
+
+.inner-content {
+    position: absolute;
+    top: 0;  bottom: 0;  left: 0;  right: 0;
+    margin: 2.5%;
+    background-color: #ffff66;
+}
+
+.inner-content:hover{
+    background-color: #98ff66;
+}
+
 #biopic {
-    padding: 10px 10px 10px 5px;
+    padding: 10px;
     width: 75px;
     height: 80px;
     float: left;
 }
 
+#biopic-name-role {
+    height: auto;
+}
+
 #name {
-    font-size: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 15px 0 10px 0;
 }
 
 #name-role {
@@ -53,7 +88,9 @@
     overflow: hidden;
 }
 #role {
+
     font-size: 16px;
+    margin: 0 0 15px 0;
 }
 
 #top-contacts {
