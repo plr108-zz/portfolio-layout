@@ -3,10 +3,8 @@
     color: #000;
 }
 
-#biopic-name-role,
-#contact-container,
-#project-header-container {
-    border: 1px solid black;
+.aspect-ratio {
+    padding-bottom: 28.125%;
 }
 
 .contact span {
@@ -33,19 +31,6 @@
     font-weight: bold;
 }
 
-.small-tile {
-    color: red;
-}
-
-.wrapper {
-    position: relative;
-    width: 100%;
-}
-
-.aspect-ratio {
-    padding-bottom: 28.125%;
-}
-
 .content {
     position: absolute;
     top: 0;
@@ -70,6 +55,25 @@
     background-color: #98ff66;
 }
 
+.project-repo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.small-tile {
+    color: red;
+}
+
+.span-dot {
+    padding: 0px 5px;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+}
+
 #biopic {
     padding: 10px;
     width: 75px;
@@ -79,6 +83,12 @@
 
 #biopic-name-role {
     height: auto;
+}
+
+#biopic-name-role,
+#contact-container,
+#project-header-container {
+    border: 1px solid black;
 }
 
 #name {
@@ -110,6 +120,25 @@
     margin: 5px 0px;
 }
 
-.span-dot {
-    padding: 0px 5px;
+@media only screen and (min-width: 640px) {
+    #project-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        resize: both;
+        overflow: auto;
+    }
+    .wrapper {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .wrapper {
+        width: 33.33333%;
+    }
+
+    .aspect-ratio {
+    padding-bottom: 56.25%;
+}
 }
