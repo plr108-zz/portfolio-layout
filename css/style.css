@@ -48,17 +48,34 @@
     left: 0;
     right: 0;
     margin: 2% 2% 2% 2%;
-    background-color: #ffff66;
 }
 
 .inner-content:hover {
     background-color: #98ff66;
 }
 
+.project-image {
+    height: 100%;
+    width: 100%;
+}
+
+.project-image-container {
+    width: 26px;
+    float: left;
+}
+
 .project-repo {
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 27px;
+}
+
+.project-text {
+    overflow: hidden;
+}
+
+.project-text-container {
+    background-color: skyblue;
 }
 
 .small-tile {
