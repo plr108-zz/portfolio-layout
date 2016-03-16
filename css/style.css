@@ -293,3 +293,7 @@
         margin: 0 auto;
     }
 }
+
+@media only screen and (width: 639px) {
+
+}
