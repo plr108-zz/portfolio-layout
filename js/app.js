@@ -1,7 +1,30 @@
-$(".project").click(function() {
-    if ($(this).find("a").length) {
-        window.open("http://plr108.github.io/ballpark-map/index.html", "_blank");
-    }
+$("#project-1").click(function() {
+    window.open("http://plr108.github.io/ballpark-map/index.html", "_blank");
+
+});
+
+$("#project-2").click(function() {
+    window.open("http://plr108.github.io/feed-the-ladybugs/index.html", "_blank");
+
+});
+
+$("#project-3").click(function() {
+    window.open("http://plr108.github.io/resume/index.html", "_blank");
+
+});
+
+$("#project-4").click(function() {
+    window.open("http://plr108.github.io/web-perf/index.html", "_blank");
+
+});
+
+$("#project-5").click(function() {
+    window.open("http://plr108.github.io/mccsings/index.html", "_blank");
+});
+
+$("#project-6").click(function() {
+    window.open("http://plr108.github.io/jasmine-testing/index.html", "_blank");
+
 });
 
 $(".project").hover(function() {

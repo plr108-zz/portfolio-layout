@@ -294,18 +294,3 @@
         margin: 0 auto;
     }
 }
-
-@media only screen and (width: 639px) {
-    a.project-link-white,
-    a.project-link-black {
-        display: block;
-    }
-    .project-image-container,
-    .project-text-container {
-        display: inline-block;
-        float: none;
-    }
-    .project-text-container {
-        height: 100%;
-    }
-}
