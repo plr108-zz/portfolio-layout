@@ -274,7 +274,6 @@
     #project-6 .aspect-ratio {
         margin-left: 2.5px;
     }
-    .inner-content {}
     #project-5,
     #project-6 {
         margin-bottom: 0px;
@@ -292,5 +291,85 @@
     #main-container {
         width: 1200px;
         margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 639px) {
+    .project-image-container {
+        width: 30%;
+        height: 100%;
+        position: absolute;
+        left: 0px;
+        background-color: purple;
+    }
+    .project-text-container {
+        width: 70%;
+        position: absolute;
+        left: 30%;
+        height: 100%;
+        margin-left: 5px;
+    }
+    .project-repo {
+        left: 0px;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 639px) {
+    .project-image-container {
+        width: 40%;
+    }
+    .project-text-container {
+        width: 60%;
+        left: 40%;
+    }
+}
+
+@media only screen and (min-width: 560px) and (max-width: 639px) {
+    .project-image-container {
+        width: 50%;
+    }
+    .project-text-container {
+        width: 50%;
+        left: 50%;
+    }
+}
+
+@media only screen and (min-width: 784px) {
+    .project-image-container {
+        width: 30%;
+        height: 100%;
+        position: absolute;
+        left: 0px;
+        background-color: purple;
+    }
+    .project-text-container {
+        width: 70%;
+        position: absolute;
+        left: 30%;
+        height: 100%;
+        margin-left: 5px;
+    }
+    .project-repo {
+        left: 0px;
+    }
+}
+
+@media only screen and (min-width: 984px) {
+    .project-image-container {
+        width: 40%;
+    }
+    .project-text-container {
+        width: 60%;
+        left: 40%;
+    }
+}
+
+@media only screen and (min-width: 1104px) {
+    .project-image-container {
+        width: 50%;
+    }
+    .project-text-container {
+        width: 50%;
+        left: 50%;
     }
 }
