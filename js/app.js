@@ -1,7 +1,42 @@
 var projects = [{
 
-    projectID:0,
+    projectID: 0,
     imgID: "project-image-1",
+    icon: "images/project1-icon.png",
+    small: "images/project1-small.png",
+    medium: "images/project1-medium.png",
+    large: "images/project1-large.png"
+}, {
+    projectID: 1,
+    imgID: "project-image-2",
+    icon: "images/project1-icon.png",
+    small: "images/project1-small.png",
+    medium: "images/project1-medium.png",
+    large: "images/project1-large.png"
+}, {
+    projectID: 2,
+    imgID: "project-image-3",
+    icon: "images/project1-icon.png",
+    small: "images/project1-small.png",
+    medium: "images/project1-medium.png",
+    large: "images/project1-large.png"
+}, {
+    projectID: 3,
+    imgID: "project-image-4",
+    icon: "images/project1-icon.png",
+    small: "images/project1-small.png",
+    medium: "images/project1-medium.png",
+    large: "images/project1-large.png"
+}, {
+    projectID: 4,
+    imgID: "project-image-5",
+    icon: "images/project1-icon.png",
+    small: "images/project1-small.png",
+    medium: "images/project1-medium.png",
+    large: "images/project1-large.png"
+}, {
+    projectID: 5,
+    imgID: "project-image-6",
     icon: "images/project1-icon.png",
     small: "images/project1-small.png",
     medium: "images/project1-medium.png",
@@ -19,32 +54,55 @@ var projectView = {
         var smallBreakpoint2 = 784;
         var mediumBreakpoint2 = 984;
         var largeBreakpoint2 = 1104;
-        console.log(width);
 
-        var imageType = null;
-
+        var imageMode = null;
         if (width < smallBreakpoint1) {
-            imageType = "icon";
-
+            imageMode = 0;
         } else if (width < mediumBreakpoint1) {
-            imageType = "small";
+            imageMode = 1;
         } else if (width < largeBreakpoint1) {
-            imageType = "medium";
+            imageMode = 2;
         } else if (width < iconBreakpoint) {
-            imageType = "large";
+            imageMode = 3;
         } else if (width < smallBreakpoint2) {
-            imageType = "icon";
-        }else if (width < mediumBreakpoint2) {
-            imageType = "small";
-        }else if (width < largeBreakpoint2) {
-            imageType = "medium";
-        }else {
-            imageType = "large";
+            imageMode = 0;
+        } else if (width < mediumBreakpoint2) {
+            imageMode = 1;
+        } else if (width < largeBreakpoint2) {
+            imageMode = 2;
+        } else {
+            imageMode = 3;
         }
 
-        console.log(imageType);
+        projectView.setProjectImageSources(imageMode);
     },
 
+    // loop through the project img elements and set the src image
+    // mode 0: icon
+    // mode 1: small
+    // mode 2: medium
+    // mode 3: large
+    setProjectImageSources: function(mode) {
+        for (var i = 0; i < projects.length; i++) {
+            switch (mode) {
+                case 0:
+                    $("#" + projects[i].imgID).attr("src", projects[i].icon);
+                    break;
+                case 1:
+                    $("#" + projects[i].imgID).attr("src", projects[i].small);
+                    break;
+                case 2:
+                    $("#" + projects[i].imgID).attr("src", projects[i].medium);
+                    break;
+                case 3:
+                    $("#" + projects[i].imgID).attr("src", projects[i].large);
+                    break;
+                default:
+                    $("#" + projects[i].imgID).attr("src", projects[i].icon);
+                    console.log("projectView.setProjectImageSources(): invalid mode value: " + mode);
+            }
+        }
+    },
 
     init: function() {
 
