@@ -1,15 +1,57 @@
+var projects = [{
+
+    projectID:0,
+    imgID: "project-image-1",
+    icon: "images/project1-icon.png",
+    small: "images/project1-small.png",
+    medium: "images/project1-medium.png",
+    large: "images/project1-large.png"
+}];
+
 var projectView = {
 
     setProjectImages: function() {
-        console.log($(document).width());
+        var width = $(document).width();
+        var smallBreakpoint1 = 400;
+        var mediumBreakpoint1 = 500;
+        var largeBreakpoint1 = 560;
+        var iconBreakpoint = 640;
+        var smallBreakpoint2 = 784;
+        var mediumBreakpoint2 = 984;
+        var largeBreakpoint2 = 1104;
+        console.log(width);
+
+        var imageType = null;
+
+        if (width < smallBreakpoint1) {
+            imageType = "icon";
+
+        } else if (width < mediumBreakpoint1) {
+            imageType = "small";
+        } else if (width < largeBreakpoint1) {
+            imageType = "medium";
+        } else if (width < iconBreakpoint) {
+            imageType = "large";
+        } else if (width < smallBreakpoint2) {
+            imageType = "icon";
+        }else if (width < mediumBreakpoint2) {
+            imageType = "small";
+        }else if (width < largeBreakpoint2) {
+            imageType = "medium";
+        }else {
+            imageType = "large";
+        }
+
+        console.log(imageType);
     },
+
 
     init: function() {
 
         projectView.setProjectImages();
 
         $(window).resize(function() {
-            projectView.setProjectImage();
+            projectView.setProjectImages();
         });
 
         $("#project-1").click(function() {
