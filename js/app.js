@@ -46,7 +46,7 @@ var projects = [{
 var projectView = {
 
     setProjectImages: function() {
-        var width = $(document).width();
+        //var width = $(document).width();
         var smallBreakpoint1 = 400;
         var mediumBreakpoint1 = 500;
         var largeBreakpoint1 = 560;
@@ -54,24 +54,26 @@ var projectView = {
         var smallBreakpoint2 = 784;
         var mediumBreakpoint2 = 984;
         var largeBreakpoint2 = 1104;
+        var imageMode = 0;
 
-        var imageMode = null;
-        if (width < smallBreakpoint1) {
-            imageMode = 0;
-        } else if (width < mediumBreakpoint1) {
-            imageMode = 1;
-        } else if (width < largeBreakpoint1) {
-            imageMode = 2;
-        } else if (width < iconBreakpoint) {
+        var width = width = Math.max( $(window).width(), window.innerWidth);
+
+        if (width >= 1104) {
             imageMode = 3;
-        } else if (width < smallBreakpoint2) {
-            imageMode = 0;
-        } else if (width < mediumBreakpoint2) {
-            imageMode = 1;
-        } else if (width < largeBreakpoint2) {
+        } else if (width >= 984) {
             imageMode = 2;
+        } else if (width >= 784) {
+            imageMode = 1;
+        } else if (width >= 640) {
+            imageMode = 0;
+        } else if (width >= 560) {
+            imageMode = 3;
+        } else if (width >= 500) {
+            imageMode = 2;
+        } else if (width >= 400) {
+            imageMode = 1;
         } else {
-            imageMode = 3;
+            imageMode = 0;
         }
 
         projectView.setProjectImageSources(imageMode);
