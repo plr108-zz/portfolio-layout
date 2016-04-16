@@ -115,41 +115,49 @@ var projectView = {
         });
 
         $("#project-1").click(function() {
+            // if .project-repo isHover, user is clicking on repo link, so do nothing here
             if (!($(this).find(".project-repo").is(":hover"))) {
                 window.open("http://plr108.github.io/ballpark-map/index.html", "_blank");
             }
         });
 
         $("#project-2").click(function() {
+            // if .project-repo isHover, user is clicking on repo link, so do nothing here
             if (!($(this).find(".project-repo").is(":hover"))) {
                 window.open("http://plr108.github.io/feed-the-ladybugs/index.html", "_blank");
             }
         });
 
         $("#project-3").click(function() {
+            // if user is hoverong over .project-repo then user is clicking on repo link, so do nothing here
             if (!($(this).find(".project-repo").is(":hover"))) {
                 window.open("http://plr108.github.io/resume/index.html", "_blank");
             }
         });
 
         $("#project-4").click(function() {
+            // if .project-repo isHover, user is clicking on repo link, so do nothing here
             if (!($(this).find(".project-repo").is(":hover"))) {
                 window.open("http://plr108.github.io/web-perf/index.html", "_blank");
             }
         });
 
         $("#project-5").click(function() {
+            // if .project-repo isHover, user is clicking on repo link, so do nothing here
             if (!($(this).find(".project-repo").is(":hover"))) {
                 window.open("http://plr108.github.io/mccsings/index.html", "_blank");
             }
         });
 
         $("#project-6").click(function() {
+            // if .project-repo isHover, user is clicking on repo link, so do nothing here
             if (!($(this).find(".project-repo").is(":hover"))) {
                 window.open("http://plr108.github.io/jasmine-testing/index.html", "_blank");
             }
         });
 
+        // if .project-repo isHover, underline .project-repo
+        // if .project isHover, underline the project title and description
         $(".project").hover(function() {
                 var titleDiv = $(this).find(".project-title");
                 var descriptionDiv = $(this).find(".project-description");
