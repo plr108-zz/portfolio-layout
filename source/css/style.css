@@ -164,13 +164,13 @@ body,
 
 #project-1 .project-text-container .project-title,
 #project-1 .project-text-container .project-description,
-#project-1 .project-text-container .project-repo a,
+#project-1 .project-text-container .project-repo,
 #project-2 .project-text-container .project-title,
 #project-2 .project-text-container .project-description,
-#project-2 .project-text-container .project-repo a,
+#project-2 .project-text-container .project-repo,
 #project-3 .project-text-container .project-title,
 #project-3 .project-text-container .project-description,
-#project-3 .project-text-container .project-repo a {
+#project-3 .project-text-container .project-repo {
     color: #FFF;
 }
 
