@@ -189,21 +189,23 @@ var projectView = {
 
                 titleDiv.css("text-decoration", "underline");
                 descriptionDiv.css("text-decoration", "underline");
-
+                repoDiv.css("text-decoration", "none");
 
                 repoDiv.hover(function() {
                         titleDiv.css("text-decoration", "none");
                         descriptionDiv.css("text-decoration", "none");
-
+                        repoDiv.css("text-decoration", "underline");
                     },
                     function() {
                         titleDiv.css("text-decoration", "underline");
                         descriptionDiv.css("text-decoration", "underline");
+                        repoDiv.css("text-decoration", "none");
                     });
             },
             function() {
                 $(this).find(".project-title").css("text-decoration", "none");
                 $(this).find(".project-description").css("text-decoration", "none");
+                $(this).find(".project-repo").css("text-decoration", "none");
             });
     }
 }
